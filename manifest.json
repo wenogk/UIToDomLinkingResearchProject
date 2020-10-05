@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "UI To Dom",
+  "version": "0.1",
+
+  "default_locale": "en",
+  "description": "A plain text description",
+  "icons": {},
+
+  // Pick one (or none)
+  "browser_action": {},
+  "page_action": {}
+}
