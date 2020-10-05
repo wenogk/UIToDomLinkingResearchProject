@@ -7,7 +7,14 @@
   "description": "A plain text description",
   "icons": {},
 
-  // Pick one (or none)
-  "browser_action": {},
+  "background": {
+    "scripts": ["./background.js"]
+  },
+  "options_page": "./options.html",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permission": ["tabs", "<all_urls>"],
+
   "page_action": {}
 }
