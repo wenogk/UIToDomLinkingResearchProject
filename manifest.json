@@ -3,7 +3,6 @@
   "name": "UI To Dom",
   "version": "0.1",
 
-  "default_locale": "en",
   "description": "A plain text description",
   "icons": {},
 
@@ -14,7 +13,5 @@
   "browser_action": {
     "default_popup": "popup.html"
   },
-  "permission": ["tabs", "<all_urls>"],
-
-  "page_action": {}
+  "permissions": ["tabs", "<all_urls>"]
 }
