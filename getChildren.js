@@ -10,10 +10,13 @@ function getChildren(ParentNode) {
       let temp = getChildren(nodes[i]);
       let boundingRectTemp = temp.getBoundingClientRect();
       let boundingRectNode = node[i].getBoundingClientRect();
-
+      // if temp is null OR the temp (child) bounding rect is within the node[i] (parent), then add node[i] to children array
       if (temp == null) {
+      } else {
       }
       nodes[i].style.background = color;
     }
   }
+
+  return children;
 }
