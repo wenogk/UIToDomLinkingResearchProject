@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(function (request, sender) {
-  if (request.action == "getSource") {
-    message.innerText = request.source;
+  if (request.action == "getChildren") {
+    message.innerHTML = request.source;
   }
 });
 
@@ -10,7 +10,7 @@ function onWindowLoad() {
   chrome.tabs.executeScript(
     null,
     {
-      file: "getPagesSource.js",
+      file: "getChildren.js",
     },
     function () {
       // If you try and inject into an extensions page or the webstore/NTP you'll get an error
